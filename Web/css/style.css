@@ -1,0 +1,439 @@
+html {box-sizing: border-box;}
+*,*:before,*:after {box-sizing: inherit;}
+
+html,body {
+    display: block;
+    line-height: 1.5;
+}
+h1 {
+    font-size: 70px;
+}
+h2 {
+    font-size: 50px;
+}
+h3 {
+    font-size: 36px;
+}
+h4 {
+    font-size: 24px;
+}
+h5 {
+    font-size: 20px;
+}
+h6 {
+    font-size: 16px;
+}
+
+
+html {
+    overflow-x: auto;
+    overflow-y: scroll;
+}
+
+body {
+    font-family: 'poppins', serif;
+    min-width: 900px;
+    margin: 0;
+    background: #F4F4F4;
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    font-weight: 100;
+}
+
+.navbar {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    border-bottom: 2px solid #cccccc;
+    background: #ffffff;
+    text-align: left;
+    user-select: none;
+}
+
+.navbar h4, .navbar h6 {
+    font-weight: 400;
+    font-variant: small-caps;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown img {
+    filter: invert(1);
+    height: 16px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    overflow: auto;
+    background: #bb2020;
+    transition: 0.2s ease;
+}
+.dropdown:hover .dropdown-content, .dropdown:active .dropdown-content{
+    display: block;
+}
+
+.navbutton {
+    float: left;
+    padding: 35px;
+    color: #bb2020;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+.navbutton:hover {
+    color: white;
+    background: #6a2424;
+}
+
+.navbar input[type=text] {
+  float: right;
+  padding: 6px;
+  margin: 23px;
+  font-size: 17px;
+  font-family: 'poppins', serif;
+  border: 3px solid #cccccc
+}
+
+.icon {
+    display: block;
+    height: 60px;
+    margin: 15px 0 0;
+}
+.title {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+.title img {
+    display: block;
+    float: left;
+    width: 100%;
+    margin: auto;
+}
+.title #img {
+    position: absolute;
+    min-width: 75%;
+    margin-top: 7%;
+    padding: 1%;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    text-align: left;
+    user-select: none;
+}
+.title #img img {
+    width: 30%;
+    margin: 0 7%;
+    border: 3px solid #FFF;
+    border-radius: 500px;
+}
+.title #img h1 {
+    font-weight: 900;
+}
+.title .buttonlink {
+    display: inline-block;
+    position: relative;
+    left: 15%;
+    border: 1px solid white;
+    color: white;
+}
+.title .buttonlink:hover {
+    background: white;
+    color: black;
+}
+.title .google-map {
+  height: 30rem;
+  position: relative;
+}
+.title .google-map iframe {
+  height: 100%;
+  width: 100%;
+}
+.title .google-map [data-state-details] {
+  color: #6b6763;
+  height: 1.5em;
+  margin-top: -0.75em;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+.title .google-map[data-state] {
+  background: #e9e5dc;
+}
+.title .google-map[data-state="loading"] [data-state-details] {
+  display: none;
+}
+.body {
+    max-width: 1400px;
+    min-width: 600px;
+    margin: 30px auto;
+    padding: 0 10px;
+}
+
+.body h1 {
+    display: inline-block;
+    width: 100%;
+    margin-top: 50px;
+    background: #a0a0a0;
+    font-weight: 900;
+    text-align: center;
+    line-height: 0.1em;
+}
+
+.body h1 span {
+    background: #f4f4f4;
+    padding: 0 50px;
+}
+
+.main {
+    float: left;
+    width: 69%;
+    margin-bottom: 100px;
+}
+
+.story {
+    margin: 30px 0;
+    background: white;
+    color: black;
+}
+.story h2, .story h5 {
+    font-weight: 300;
+    padding: 5px;
+}
+.story h2 {
+    border-bottom: 3px solid rgba(0,0,0,0.5);
+}
+.story p {
+    display: none;
+    margin: 0;
+    padding: 10px;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.story a {
+    text-decoration: none;
+}
+
+.content {
+    margin: 30px 0;
+    border: 1px solid #E8E8E8;
+    border-bottom: 0.25em solid #E8E8E8; 
+    background: white;
+    color: black;
+    text-align: left;
+}
+.content h2 {
+    width: 100%;
+    padding: 30px;
+    background: #E8E8E8;
+    display: inline-block;
+    border-bottom: 5px solid #a0a0a0;
+    font-weight: 900;
+}
+.content ul {
+    margin: 0;
+    padding: 20px 30px;
+}
+.content ul {list-style-type: none;}
+
+.content table {
+    margin: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.content td, .content th {
+    text-align: left;
+    padding: 16px;
+}
+
+.content td:nth-child(odd) {
+    font-weight: 900;
+    text-align: right;
+}
+
+.article {
+    margin: 20px;
+    height: 220px;
+}
+.article h3, .article h5 {
+    padding: 0 10px;
+}
+.article div {
+    float: left;
+    width: 42%;
+    margin: 30px;
+}
+.article img {
+    display: block;
+    float: left;
+    width: 50%;
+    margin: 0;
+}
+
+.viewall {
+    display: inline-block;
+    width: 100%;
+    margin: 20px auto;
+    padding: 15px 30px;
+    border-radius: 50px;
+    background: #BB2020;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+.viewall:hover {background: #6A2424;}
+
+.image {position: relative;}
+.image img {
+    display: block;
+    width: 100%;
+}
+.text {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    /*text-shadow: 0 2px black;*/
+}
+
+.extra {
+    float: right;
+    width: 29%;
+    text-align: left;
+}
+
+.side {
+    margin: 30px 0;
+    border: 1px solid #E8E8E8;
+    border-bottom: 1px solid #E8E8E8;
+    background: white;
+    text-align: center;
+}
+.side h5 {
+    padding: 15px;
+    border-bottom: 2px solid #6a2424;
+    background: #bb2020;
+    color: white;
+}
+.side h4, .side p {
+    margin: 0;
+    padding: 5px 15px;
+}
+.side li {
+    margin: 20px;
+    list-style-type: none;
+}
+
+.buttonlink {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 50px;
+    border: 1px solid #bb2020;
+    border-radius: 25px;
+    color: #bb2020;
+    text-decoration: none;
+    transition: 0.2s ease;
+    user-select: none;
+}
+
+.buttonlink:hover {
+    background: #bb2020;
+    color: white;
+}
+
+.footer {
+    padding: 20px;
+    background: #232323;
+    color: white;
+    text-align: center;
+}
+
+.footer-body {
+    float: left;
+    width: 33%;
+    margin: auto;
+    padding: 10px;
+}
+
+.footer-body:last-of-type {border: none;}
+
+.footer-body h5 {
+    color: white;
+    font-weight: 700;
+}
+
+.footer #link {text-decoration: none;}
+
+.footer i {margin: 10px;}
+.footer a {color: white;}
+
+.clearfix {clear: both;}
+
+.spacer {
+    width: 100%;
+    height: 90px;
+}
+
+
+@media screen and (max-width: 1100px) {
+    body {font-size: 12px;}
+    h1 {font-size: 60px;}
+    h2 {font-size: 36px;}
+    h3 {font-size: 24px;}
+    h4 {font-size: 18px;}
+    h5 {font-size: 16px;}
+    h6 {font-size: 12px;}
+    .spacer {height: 95px;}
+    .icon {height: 65px;}
+    .navbutton {
+        width: 120px;
+        padding: 20px;
+    }
+    .navbutton h4 {border: none;}
+    .dropdown img {height: 50px;}
+    .dropdown-content {top: 95px;}
+    .dropdown-content .navbutton {
+        width: 250px;
+        padding: 30px;
+    }
+    .main {
+        float: none;
+        width: 95%;
+        margin: auto;
+    }
+    .story {
+        width: 47%;
+        float: left;
+        margin: 10px;
+    }
+    .viewall {width: auto;}
+    .extra {
+        float: none;
+        clear: both;
+        width: 100%;
+    }
+    .side {
+        float: left;
+        width: 43%;
+        height: 250px;
+        margin: 30px;
+    }
+    .hidesm {display: none;}
+}
+@media screen and (min-width: 1100px) {
+    .hidelg {display: none;}
+}

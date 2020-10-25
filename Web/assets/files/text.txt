@@ -1,0 +1,162 @@
+    <!--<div class="slides">
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>    
+      <div class="slideshow-container">
+        <div class="mySlides">
+          <img src="images/pictures/08142017.jpg" style="width:100%">
+          <p>AYLUS at the Star of Hope office after dropping off school supplies for the children in need</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="images/pictures/08052017.jpg" style="width:100%">
+          <p>AYLUS finished packing school supplies to give to the less fortunate!</p>
+        </div>
+        
+        <div class="mySlides">
+          <img src="images/pictures/07202017.jpg" style="width:100%">
+          <p>AYLUS Volunteers after a long day of giving away hygiene products to homeless people</p>
+        </div>
+
+        <div class="mySlides">
+          <img src="images/pictures/07152017.jpg" style="width:100%">
+          <p>The AYLUS team and our hygiene supplies to give to the homeless</p>
+        </div>
+      </div>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    
+    <div class="clearfix" style="margin-top: 10px">
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </div>-->
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+
+
+
+
+
+
+
+
+
+css
+
+.dropdown {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #BB2020;
+    padding: 5px;
+    min-width: 160px;
+    /*box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);*/
+    z-index: 1;
+}
+
+.dropdown-content .navbutton {
+    width: 100%;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/**/
+
+.slides {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    /*box-shadow: 0 2px 5px grey;*/
+}
+
+.slideshow-container {
+    margin: auto;
+    color: white;
+    background-color: black;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    padding: 16px;
+    margin: 10px;
+    color: #BB2020;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.2s ease;
+    border: 1px solid #BB2020;
+}
+
+
+.prev {
+    display: inline-block;
+    left:0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    display: inline-block;
+    right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover {
+    color: white;
+    background-color: #BB2020;
+}
+
+.dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.2s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+</script>

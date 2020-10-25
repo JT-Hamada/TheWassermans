@@ -1,0 +1,35 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) or (-webkit-min-device-pixel-ratio: 2) {
+    body, p {font-size: 40px;}
+    h1 {font-size: 80px;}
+    h2 {font-size: 70px;}
+    h5 {font-size: 50px;}
+    
+    .icon {
+        float: none;
+        height: 120px;
+    }
+    .navbar {
+        text-align: center;
+        height: 150px;
+    }
+    .main {
+        width: 100%;
+        padding: 0.5em;
+    }
+    .story {
+        width: 100%;
+    }
+    .extra {
+        float: none;
+        margin: 5px 0 0 0;
+        width: 100%;
+        padding: 0.5em;
+    }
+    .spacer {
+        height: 130px;
+    }
+    .hide {display: none;}
+}
+
+@media only screen and (min-device-width: 481px) {.hidelg {display: none;}}
+
